@@ -1,0 +1,35 @@
+server:
+  port: 9001
+  reactive:
+    session:
+      timeout: 60000
+
+hdfs:
+  path: hdfs://yc
+  nameservices: yc
+  username: root
+  namenodes: nn1,nn2
+  master: master:8020
+  node1: node1:8020
+  provider: org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 500MB
+  redis:
+    host: zhulinz.top
+    port: 4030
+    password: zhulin084
+    timeout: 1000
+    jedis:
+      pool:
+        min-idle: 5
+        max-idle: 10
+        max-wait: -1
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://zhulinz.top:3306/clouddisk?serverTimezone=UTC
+    username: zhulin
+    password: zhulin0804
