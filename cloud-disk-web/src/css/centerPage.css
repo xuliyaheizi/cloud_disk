@@ -1,0 +1,18 @@
+#centerPate {
+    overflow: hidden;
+    width: 100%;
+}
+
+#gangLia {
+    margin: 10px 10px;
+    float: left;
+    width: 100%;
+    overflow: hidden;
+}
+
+#gangLia iframe {
+    position: absolute;
+    transform: scale(.5, .5) translate(-50%, -50%);
+    width: 165%;
+    height: 160%;
+}

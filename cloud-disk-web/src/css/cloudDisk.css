@@ -1,0 +1,19 @@
+#cloudDisk {
+    margin: 0 auto;
+    padding: 0;
+}
+
+#cloudDisk .upload-demo {
+    display: inline !important;
+}
+
+#cloudDisk .el-upload {
+    position: absolute;
+}
+
+#cloudDisk .el-upload-list {
+    display: inline-block;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: -6px;
+}
